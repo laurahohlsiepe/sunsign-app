@@ -5,7 +5,7 @@
     <p class="text-md text-center pt-6">Enter your date of birth and find out your zodiac sign and info about it 💓 </p>
     <hr class="my-4 h-0.5 mx-12 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
   </header>
-  <main>
+  <main class="bg-pink-300">
     <section class="mt-6">
       <p class="text-center py-2">Enter your birthdate</p>
       <div class="flex justify-center py-2">
@@ -19,7 +19,7 @@
       <div v-if="zodiacSign" class="text-center">Your Sun Sign is <bold class="font-bold text-fuchsia-950">{{ zodiacSign }}</bold>.</div>
     </section>
     <section class="pt-4 flex justify-center flex-col">
-      <div class="text-left mx-32 px-4">{{ getSignInfos() }}</div>
+      <div class="text-left md:mx-32 mx-14 px-4 mb-16">{{ getSignInfos() }}</div>
     </section>
   </main>
 </body>
